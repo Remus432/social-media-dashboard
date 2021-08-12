@@ -1,0 +1,29 @@
+.toggle
+  display: flex
+  align-items: center
+  color: #fff
+
+  & span
+      font-weight: bold
+      margin-right: 1rem
+
+  &__btn
+    border-radius: 20px
+    background-image: $toggle-dark
+    cursor: pointer
+    width: 40px
+    height: 20px
+    position: relative
+
+    &-circle
+      width: 15px
+      height: 15px
+      background-color: $bg-card-dark
+      border-radius: 50%
+      position: absolute
+      top: 50%
+      left: 0px
+      transition: .2s all ease-in-out
+
+    & input
+      display: none

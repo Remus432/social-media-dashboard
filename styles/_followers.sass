@@ -1,0 +1,77 @@
+.dashboard__followers
+  display: grid
+  grid-gap: 3rem
+  grid-template-columns: repeat(4, 1fr)
+  margin-top: 2rem
+
+  &-card
+    height: 250px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    background-color: $bg-card-dark
+    border-radius: 6px
+    color: #fff
+    padding: 2rem
+    position: relative
+    overflow: hidden
+    cursor: pointer
+
+    &:hover
+      background-color: lighten($bg-card-dark, 10%)
+
+    &-user
+      display: flex
+      align-items: center
+
+      &-name
+        margin-left: 1.2rem
+        color: $blue-text-dark
+
+    &-tag
+      letter-spacing: .5rem
+      color: $blue-text-dark
+      margin-top: -1rem
+      margin-bottom: 1rem
+
+    &-increase
+      display: flex
+      align-items: center
+      color: $lime-green
+
+      &-rate
+        margin-left: .8rem
+        font-weight: bold
+    
+    &-amount
+      font-size: 5rem
+      font-weight: bold
+
+    &:nth-of-type(1)
+      &::before
+        background-color: $fb-card
+
+    &:nth-of-type(2)
+      &::before
+        background-color: $twitter-card
+    
+    &:nth-of-type(3)
+      &::before
+        background-image: $ig-card
+    
+    &:nth-of-type(4)
+      & span
+        color: $bright-red
+
+      &::before
+        background-color: $yt-card
+
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 4px
+      

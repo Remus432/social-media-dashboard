@@ -1,0 +1,41 @@
+@media (max-width: 798px)
+  .dashboard
+    &__setting
+      flex-direction: column
+      align-items: flex-start
+      
+      &-followers
+        margin-bottom: 4rem
+
+
+    &__overview-grid
+      grid-template-columns: repeat(1, 1fr)
+
+    &__followers
+      grid-template-columns: repeat(1, 1fr)
+  
+  .toggle
+    border-top: 1px solid $blue-text-dark
+    width: 100%
+    padding-top: 2rem
+    justify-content: space-between
+    margin-bottom: 3rem
+
+
+@media (min-width: 800px)
+  .dashboard
+
+    &__overview-grid
+      grid-template-columns: repeat(2, 1fr)
+
+    &__followers
+      grid-template-columns: repeat(2, 1fr)
+
+@media (min-width: 1000px)
+  .dashboard
+
+    &__overview-grid
+      grid-template-columns: repeat(4, 1fr)
+
+    &__followers
+      grid-template-columns: repeat(4, 1fr)

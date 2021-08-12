@@ -1,0 +1,56 @@
+.dashboard__overview
+  margin-top: 4rem
+
+  &-grid
+    display: grid
+    grid-gap: 3rem
+    grid-template-columns: repeat(4, 1fr)
+    margin-top: 2rem
+  
+  &-card
+    background-color: $bg-card-dark
+    border-radius: 6px
+    display: flex
+    height: 150px
+    justify-content: space-between
+    padding: 4rem 2rem
+    cursor: pointer
+
+    &:hover
+      background-color: lighten($bg-card-dark, 15%)
+
+    &:nth-of-type(2),
+    &:nth-of-type(7),
+    &:nth-of-type(8)
+      & span
+        color: $bright-red
+
+
+    &-platform
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+
+      &-increase
+        display: flex
+        align-items: center
+
+        &-rate
+          color: $lime-green
+          margin-left: 1rem
+
+    &-views
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      &-amount
+        font-size: 3rem
+        color: #fff
+        font-weight: bold
+
+    &-subheadline
+      color: $blue-text-dark
+      font-weight: boold
+
